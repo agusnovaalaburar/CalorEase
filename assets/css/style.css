@@ -9,6 +9,11 @@
     --color-primario: #007bff;
     --color-primario-hover: #0056b3;
     --color-input: #e0e0e0;
+    --color-secundario: #1c2b3a;
+    --color-texto: #ffffff;
+    --color-boton: #007bff;
+    --color-boton-hover: #0056b3;
+    --fuente-primaria: 'Arial', sans-serif;
 }
 
 /* Reset y globales */
@@ -98,12 +103,15 @@ body {
 .auth-link {
     display: block;
     margin-top: 10px;
-    color: var(--color-texto);
-    text-decoration: none;
-    font-size: 16px;
+    a{
+        color: var(--color-texto);
+        text-decoration: none;
+        font-size: 16px;
+    }
+
 }
 
-.auth-link:hover {
+.auth-link a:hover {
     text-decoration: underline;
 }
 
@@ -320,4 +328,85 @@ body {
 
 .BotonRepContraseña:hover {
     background-color: #0056b3;
+
+
+/*MAIN*/
+
+.hero {
+    background-color: var(--color-primario);
+    color: var(--color-texto);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 5%;
+    gap: 20px;
+}
+
+.hero__content {
+    max-width: 50%;
+}
+
+.hero__title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero__text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.hero__buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn--primary {
+    background-color: var(--color-boton);
+    color: var(--color-texto);
+}
+
+.btn--primary:hover {
+    background-color: var(--color-boton-hover);
+}
+
+.btn--secondary {
+    color: var(--color-texto);
+    text-decoration: underline;
+}
+
+.hero__logo img {
+    max-width: 150px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero__content {
+        max-width: 100%;
+    }
+
+    .hero__buttons {
+        justify-content: center;
+    }
+
+    .hero__logo img {
+        margin-top: 20px;
+    }
 }
