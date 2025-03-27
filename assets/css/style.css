@@ -9,6 +9,11 @@
     --color-primario: #007bff;
     --color-primario-hover: #0056b3;
     --color-input: #e0e0e0;
+    --color-secundario: #1c2b3a;
+    --color-texto: #ffffff;
+    --color-boton: #007bff;
+    --color-boton-hover: #0056b3;
+    --fuente-primaria: 'Arial', sans-serif;
 }
 
 /* Reset y globales */
@@ -155,16 +160,7 @@ body {
 }
 
 
-
-
-:root {
-    --color-primario: #0e1621;
-    --color-secundario: #1c2b3a;
-    --color-texto: #ffffff;
-    --color-boton: #007bff;
-    --color-boton-hover: #0056b3;
-    --fuente-primaria: 'Arial', sans-serif;
-}
+/*MAIN*/
 
 .hero {
     background-color: var(--color-primario);
