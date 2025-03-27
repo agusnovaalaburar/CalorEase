@@ -1,22 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-
-@font-face {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    src: url(../fonts/Georgia/GeorgiaPro-Regular.ttf);
-}
-
 :root {
-    --fuenteHeading: "PT sans", sans-serif;
-    --fuenteParrafos: "Open Sans", sans-serif;
-    --fuenteMain: "Bebas Neue", cursive;
-    --fuenteGeorgia: "Georgia", "Times New Roman", Times;
+    /* Fuentes */
+    --fuente-heading: Arial, sans-serif;
+    --fuente-parrafos: Arial, sans-serif;
 
-    --primario: #784d3c;
-    --gris: #e1e1e1;
-    --eco_green: #45cf63;
-    --creme: #f8f4ec;
+    /* Colores */
+    --color-fondo: #0e1621;
+    --color-texto: #ffffff;
+    --color-primario: #007bff;
+    --color-primario-hover: #0056b3;
+    --color-input: #e0e0e0;
 }
 
+/* Reset y globales */
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -24,77 +19,15 @@ html {
     scroll-snap-type: y mandatory;
 }
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
     box-sizing: inherit;
 }
 
 body {
-    font-family: var(--fuenteParrafos);
+    font-family: var(--fuente-parrafos);
     font-size: 1.6rem;
     line-height: 2;
-}
-
-/* GLOBALES */
-
-.contenedor {
-    width: 90%;
-    margin: 0 auto;
-    max-height: 100%;
-}
-
-a {
-    text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4 {
-    font-family: var(--fuenteHeading);
-    line-height: 1.2;
-}
-
-h1 {
-    font-size: 4.8rem;
-}
-
-h2 {
-    font-size: 4rem;
-}
-
-h3 {
-    font-size: 3.2rem;
-}
-
-h4 {
-    font-size: 2.8rem;
-}
-
-/* UTILIDADES */
-.no-margin {
-    margin: 0;
-}
-
-.no-padding {
-    padding: 0;
-}
-
-.centrar-texto {
-    text-align: center;
-}
-
-/* MAIN CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background-color: #0e1621;
+    background-color: var(--color-fondo);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,48 +35,54 @@ body {
     padding: 20px;
 }
 
-.container {
+/* Contenedor de autenticación */
+.auth-container {
     text-align: center;
-    background-color: #0e1621;
+    background-color: var(--color-fondo);
     padding: 20px;
     border-radius: 10px;
     width: 100%;
     max-width: 400px;
 }
 
-h1 {
-    color: white;
+/* Título */
+.auth-title {
+    color: var(--color-texto);
     font-size: 26px;
     margin-bottom: 10px;
 }
 
-hr {
+/* Línea divisoria */
+.auth-divider {
     width: 50px;
     height: 2px;
-    background-color: white;
+    background-color: var(--color-texto);
     border: none;
     margin: 0 auto 20px auto;
 }
 
-form {
+/* Formulario */
+.auth-form {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-input {
+/* Campos de entrada */
+.auth-input {
     width: 100%;
     padding: 15px;
     border: none;
     border-radius: 10px;
-    background-color: #e0e0e0;
+    background-color: var(--color-input);
     font-size: 18px;
     text-align: center;
 }
 
-button {
-    background-color: #007bff;
-    color: white;
+/* Botón */
+.auth-button {
+    background-color: var(--color-primario);
+    color: var(--color-texto);
     border: none;
     padding: 12px;
     border-radius: 10px;
@@ -151,19 +90,20 @@ button {
     font-size: 18px;
 }
 
-button:hover {
-    background-color: #0056b3;
+.auth-button:hover {
+    background-color: var(--color-primario-hover);
 }
 
-a {
+/* Enlace */
+.auth-link {
     display: block;
     margin-top: 10px;
-    color: white;
+    color: var(--color-texto);
     text-decoration: none;
     font-size: 16px;
 }
 
-a:hover {
+.auth-link:hover {
     text-decoration: underline;
 }
 
@@ -171,20 +111,20 @@ a:hover {
 
 /* Tablets (entre 600px y 1024px) */
 @media (min-width: 600px) and (max-width: 1024px) {
-    .container {
+    .auth-container {
         max-width: 500px;
     }
 
-    h1 {
+    .auth-title {
         font-size: 30px;
     }
 
-    input {
+    .auth-input {
         padding: 18px;
         font-size: 20px;
     }
 
-    button {
+    .auth-button {
         font-size: 20px;
         padding: 14px;
     }
@@ -192,20 +132,20 @@ a:hover {
 
 /* Celulares (máximo 599px) */
 @media (max-width: 599px) {
-    .container {
+    .auth-container {
         max-width: 90%;
     }
 
-    h1 {
+    .auth-title {
         font-size: 24px;
     }
 
-    input {
+    .auth-input {
         padding: 16px;
         font-size: 18px;
     }
 
-    button {
+    .auth-button {
         font-size: 18px;
         padding: 12px;
     }
