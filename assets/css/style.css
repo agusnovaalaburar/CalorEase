@@ -349,6 +349,24 @@ body {
   gap: 2rem;
 }
 
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #0D1321; /* Color de fondo */
+  overflow: hidden; /* Evita que la imagen sobresalga */
+}
+
+.hero__lechuga {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px; /* Ajusta según sea necesario */
+  max-width: 35%; /* Para hacerlo responsive */
+}
+
 .hero__content {
   flex: 65%;
   display: flex;
@@ -453,6 +471,7 @@ body {
   display: flex;
   align-items: center;
   width: 5%;
+  margin: 1rem;
 }
 
 .navbar__logo img {
