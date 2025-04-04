@@ -288,6 +288,7 @@ body {
   padding: 2rem;
   background-color: #0d1321; /* Color de fondo */
   overflow: hidden; /* Evita que la imagen sobresalga */
+  padding: 0 6rem;
 }
 
 .hero__lechuga {
@@ -407,6 +408,15 @@ body {
 .nuestro-objetivo p {
   font-weight: bold;
   width: 80%;
+}
+
+/*---------------------------------
+-----------food info--------------
+----------------------------------*/
+.food-info {
+  height: 50rem;
+  margin-top: 5rem;
+  background-color: var(--color-secundario);
 }
 /* Responsive */
 @media (max-width: 1024px) {
