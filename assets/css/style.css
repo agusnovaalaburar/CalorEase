@@ -166,90 +166,6 @@ body {
   }
 }
 
-/* Estilos generales */
-.BodyEdad {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #0c0f16;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  flex-direction: column;
-}
-
-/* Estilos para el header */
-.HeaderEdad {
-  width: 100%;
-  background-color: #2c3e50;
-  padding: 10px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.navEdad {
-  display: flex;
-  align-items: center;
-  padding-left: 10px;
-}
-
-.navEdad a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-/* Contenedor principal */
-.containerEdad {
-  background: #0c0f16;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  width: 350px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/* Estilos para el formulario */
-.formEdad {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.h2Edad {
-  font-size: 24px;
-  color: white;
-  font-weight: bold;
-}
-
-.seleccionEdad[type="text"] {
-  padding: 12px;
-  border: none;
-  border-radius: 10px;
-  font-size: 18px;
-  background-color: #d1d1d1;
-  text-align: center;
-}
-
-.sigEdad {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 12px;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.sigEdad:hover {
-  background-color: #0056b3;
-}
 /*-----------------------------------------------------------------------*/
 /* Estilos generales */
 .BodyRepContraseña {
@@ -513,4 +429,253 @@ body {
   .navbar__logo {
     width: 10%;
   }
+}
+
+/*EDAD ---------------------------------------------*/
+/* Estilos generales */
+.BodyEdad {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0c0f16;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* Estilos para el header */
+.HeaderEdad {
+  width: 100%;
+  background-color: #2c3e50;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.NavEdad {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.NavEdad a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Contenedor principal */
+.ContainerEdad {
+  background: #0c0f16;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Estilos para el formulario */
+.FormEdad {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.h2Edad {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+
+.seleccionEdad[type="text"] {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  background-color: #d1d1d1;
+  text-align: center;
+}
+
+.SigEdad {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.SigEdad:hover {
+  background-color: #0056b3;
+}
+
+/*PESO------------------------------*/
+
+/* Estilos generales */
+.BodyPeso {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0c0f16;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* Estilos para el header */
+.HeaderPeso {
+  width: 100%;
+  background-color: #2c3e50;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.NavPeso {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.NavPeso a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Contenedor principal */
+.ContainerPeso {
+  background: #0c0f16;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Estilos para el formulario */
+.FormPeso {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.h2Peso {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+
+.seleccionPeso[type="text"] {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  background-color: #d1d1d1;
+  text-align: center;
+}
+
+.SigPeso {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.SigPeso:hover {
+  background-color: #0056b3;
+}
+
+/*-------------------------------------- OBJETIVOS ---------------------------------*/
+
+/* Estilos generales */
+.BodyObjetivos {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0c0f16;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* Estilos para el header */
+.HeaderObjetivos {
+  width: 100%;
+  background-color: #2c3e50;
+  padding: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.NavObjetivos {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.VolverObjetivos img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Contenedor principal */
+.ContainerObjetivos {
+  background: #0c0f16;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Estilos del título */
+.h2Objetivos {
+  font-size: 32px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Estilos de los botones */
+.BotonObjetivos {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: bold;
+  width: 100%;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.BotonObjetivos:hover {
+  background-color: #0056b3;
 }
