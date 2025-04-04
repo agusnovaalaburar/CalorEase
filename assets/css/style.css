@@ -315,7 +315,6 @@ body {
 .hero__logo {
   flex: 35%;
   position: relative; /* This will be the reference for the absolute positioning */
-  border: 1px solid #ccc;
 }
 .hero__logo img {
   max-width: 100%;
@@ -356,6 +355,7 @@ body {
 .btn--primary {
   background-color: var(--color-boton);
   color: var(--color-texto);
+  border-radius: 3rem;
 }
 
 .btn--primary:hover {
@@ -367,6 +367,47 @@ body {
   text-decoration: underline;
 }
 
+/*-----------------------------------------------
+----------------NUESTRO OBJETIVO-----------------
+-----------------------------------------------*/
+.nuestro-objetivo {
+  display: flex;
+  flex-direction: row;
+  height: 80%;
+  width: 80%;
+  margin: 5rem auto;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+.nuestro-objetivo-img {
+  flex: 35%;
+  height: 100%;
+}
+.nuestro-objetivo-img img {
+  height: 100%;
+  border-radius: 5rem;
+}
+.nuestro-objetivo-info {
+  flex: 65%;
+}
+.nuestro-objetivo h3,
+.nuestro-objetivo h2,
+.nuestro-objetivo p {
+  color: var(--color-texto);
+}
+.nuestro-objetivo h3 {
+  font-size: 5rem;
+  line-height: 5rem;
+  width: 80%;
+}
+.nuestro-objetivo h2 {
+  font-size: 2.5rem;
+}
+.nuestro-objetivo p {
+  font-weight: bold;
+  width: 80%;
+}
 /* Responsive */
 @media (max-width: 1024px) {
   .hero {
@@ -381,6 +422,7 @@ body {
 
   .hero__logo img {
     margin-top: 20px;
+    width: 30%;
   }
   .hero__text {
     width: 100%;
