@@ -461,7 +461,8 @@ body {
     text-align: center;
   }
 
-  .nuestro-objetivo h3 {
+  .nuestro-objetivo h3,
+  .food-details h3 {
     font-size: 3rem;
     line-height: 4rem;
     width: 100%;
@@ -501,6 +502,12 @@ body {
   height: 50rem;
   margin-top: 5rem;
   background-color: var(--color-secundario);
+}
+
+.food-details h3 {
+  font-size: 3rem;
+  line-height: 4rem;
+  width: 100%;
 }
 /* Responsive */
 @media (max-width: 1024px) {
