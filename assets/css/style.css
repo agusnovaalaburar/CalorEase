@@ -32,6 +32,7 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+  z-index: 1000;
 }
 
 body {
@@ -51,7 +52,9 @@ body {
   position: absolute; /* Position it absolutely within the container */
   top: 0; /* Position it at the top */
   right: 0; /* Position it at the right */
-  width: 20rem;
+  width: 25rem;
+  margin-top: -3rem;
+  z-index: 10;
 }
 .float-image-bottom-right {
   position: absolute; /* Position it absolutely within the container */
@@ -277,6 +280,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 40px 5%;
+  padding-bottom: 2rem;
   gap: 2rem;
 }
 
@@ -316,6 +320,7 @@ body {
 .hero__logo {
   flex: 35%;
   position: relative; /* This will be the reference for the absolute positioning */
+  z-index: 1000;
 }
 .hero__logo img {
   max-width: 100%;
@@ -380,6 +385,8 @@ body {
   gap: 5rem;
   justify-content: center;
   align-items: center;
+  z-index: 10;
+  min-height: fit-content;
 }
 .nuestro-objetivo-img {
   flex: 35%;
@@ -410,6 +417,83 @@ body {
   width: 80%;
 }
 
+/* Media Query para pantallas más pequeñas */
+
+@media (max-width: 910px) {
+  .nuestro-objetivo h3 {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  .nuestro-objetivo h2 {
+    font-size: 2rem;
+  }
+
+  .nuestro-objetivo p {
+    font-size: 1.6rem;
+    width: 90%;
+  }
+}
+@media (max-width: 810px) {
+  .nuestro-objetivo {
+    margin-top: 10rem;
+    flex-direction: column;
+    width: 90%;
+    gap: 3rem;
+    height: fit-content;
+  }
+
+  .nuestro-objetivo-img {
+    /* width: 100%; */
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nuestro-objetivo-img img {
+    width: 100%;
+    height: 40rem;
+  }
+
+  .nuestro-objetivo-info {
+    flex: 50%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nuestro-objetivo h3 {
+    font-size: 3rem;
+    line-height: 4rem;
+    width: 100%;
+  }
+
+  .nuestro-objetivo h2 {
+    font-size: 2rem;
+  }
+
+  .nuestro-objetivo p {
+    font-size: 1.6rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* Media Query para pantallas muy pequeñas (móviles) */
+@media (max-width: 480px) {
+  .nuestro-objetivo h3 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .nuestro-objetivo h2 {
+    font-size: 1.8rem;
+  }
+
+  .nuestro-objetivo p {
+    font-size: 1.4rem;
+  }
+}
+
 /*---------------------------------
 -----------food info--------------
 ----------------------------------*/
@@ -437,6 +521,12 @@ body {
   .hero__text {
     width: 100%;
     /* max-width: 50rem; */
+  }
+}
+
+@media (max-width: 540px) {
+  .hero h1 {
+    font-size: 5rem;
   }
 }
 /*----------------------------
