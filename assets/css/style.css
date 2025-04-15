@@ -884,3 +884,54 @@ body {
 .BotonObjetivos:hover {
   background-color: #0056b3;
 }
+
+
+.food-search-bar {
+  width: 80%;
+  height: 6rem;
+  margin: 1.5rem auto;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.food-search-bar form{
+  height: 100%;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  background-color: var(--color-input);
+  border-radius: 3rem;
+  padding: 0 1rem;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.search-container input {
+  flex: 1;
+  height: 100%;
+  border: none;
+  outline: none;
+  border-radius: 3rem;
+  padding: 0 1rem;
+  font-size: 2.1rem;
+  background-color: transparent;
+}
+
+.search-container .search-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 2rem;
+  width: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-container .search-icon img {
+  width: 100%;
+  height: auto;
+}
