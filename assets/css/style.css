@@ -21,6 +21,15 @@ main {
   margin: 1rem 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  color: var(--color-texto);
+}
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -499,15 +508,43 @@ body {
 -----------food info--------------
 ----------------------------------*/
 .food-info {
-  height: 50rem;
+  height: auto;
   margin-top: 5rem;
   background-color: var(--color-secundario);
+  padding-top: 5rem;
+  padding: 1rem;
 }
 
 .food-details h3 {
-  font-size: 3rem;
+  font-size: 4.5rem;
   line-height: 4rem;
-  width: 100%;
+  width: 80%;
+  margin: 1rem auto;
+  margin-bottom: 3rem;
+}
+.food-details p {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.food-details {
+  text-align: center;
+  width: 60%;
+  margin: 3rem auto;
+  min-height: fit-content;
+  height: 40rem;
+  background-color: var(--color-fondo);
+  border-radius: 2rem;
+  padding: 3rem 1.5rem;
+}
+.food-search-bar input {
+  width: 80%;
+  height: 4.5rem;
+  margin: 1.5rem;
+  border-radius: 3rem;
+  border: none;
+  background-color: var(--color-input);
 }
 /* Responsive */
 @media (max-width: 1024px) {
