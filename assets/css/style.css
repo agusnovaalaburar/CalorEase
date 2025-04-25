@@ -969,6 +969,10 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
+
+.profile-fields {
+  width: 60%;
+}
 .profile-user-info {
   width: 30%;
 }
@@ -980,7 +984,7 @@ body {
 }
 
 .field {
-  width: 70%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
