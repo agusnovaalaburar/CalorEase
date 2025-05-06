@@ -20,7 +20,7 @@ $contraseñalog = $_POST["contraseñalog"];
 $emaillog = $conn->real_escape_string($emaillog);
 
 // Obtener la contraseña del usuario
-$sql = "SELECT contraseña FROM usuarios WHERE mail = '$emaillog'";
+$sql = "SELECT contraseña FROM usuario WHERE email = '$emaillog'";
 $result = $conn->query($sql);
 
 if ($result->num_rows === 0) {
@@ -34,7 +34,7 @@ $pass = $row['contraseña'];
 // Verificar contraseña
 if ($contraseñalog == $pass) {
     // Obtener id del usuario
-    $sql_id = "SELECT id_usuario FROM usuarios WHERE mail = '$emaillog'";
+    $sql_id = "SELECT id_usuario FROM usuario WHERE email = '$emaillog'";
     $result_id = $conn->query($sql_id);
 
     if ($result_id->num_rows > 0) {

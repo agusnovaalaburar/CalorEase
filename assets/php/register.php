@@ -11,30 +11,24 @@ if ($conn->connect_error) {
   die("error en conexion: " . $conn->connect_error);
 }
 //cargar 
-$email = $_POST["emailreg"] ?? null;
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = $_POST['email'] ?? '';
+    $usuario = $_POST['usuario'] ?? '';
+    $contrasena = $_POST['contrasena'] ?? '';
+    $contrasena2 = $_POST['contrasena2'] ?? '';
 
-
-$usuario = $_POST["usuarioreg"]  ?? null;
-
-$contraseña = $_POST["contraseñareg"]  ?? null;
-
-$contraseña2 = $_POST["contraseña2reg"]  ?? null;
-
-if($contraseña == $contraseña2)
-{
-$sql = "INSERT INTO usuarios (mail, usuario, contraseña) VALUES ('$email', '$usuario', '$contraseña');";
+    
+    if ($contrasena === $contrasena2) {
+        $sql = "INSERT INTO usuario (email, usuario, contraseña)
+                VALUES ('$email', '$usuario', '$contrasena');";
+        
+        if ($conn->query($sql) === TRUE) {
+            echo "cargado";
+        } else {
+            echo "Error: " . $sql . "<br>" . $conn->error;
+        }
+    } else {
+        echo "contraseñas distintas";
+    }
 }
-else
-{
-    echo "contraseñas distintas";
-}
-
-if ($conn->query($sql) === TRUE) {
-  echo "cargado";
-} else {
-  echo "Error: " . $sql . "<br>" . $conn->error;
-}
-$conn->close();
-
-
 ?>
