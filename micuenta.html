@@ -7,40 +7,56 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
   <body>
+    <nav class="navbar"></nav>
     <div class="container">
-      <div class="profile">
-        <div class="field">
-          <label>Peso: 99kg</label>
-          <button class="change-btn">Change</button>
-          <input type="text" class="input-field" />
-        </div>
-        <div class="field">
-          <label>Altura: 150cm</label>
-          <button class="change-btn">Change</button>
-          <input type="text" class="input-field" />
-        </div>
-        <div class="field">
-          <label>Edad: 11</label>
-          <button class="change-btn">Change</button>
-          <input type="text" class="input-field" />
-        </div>
-        <div class="field">
-          <label>Objetivo:</label>
-          <button class="change-btn">Change</button>
-          <select class="input-field">
-            <option value="">Selecciona un objetivo</option>
-            <option value="perder">Perder peso</option>
-            <option value="mantener">Mantener peso</option>
-            <option value="ganar">Ganar masa</option>
-          </select>
-        </div>
+      <main>
+        <section class="profile">
+          <div class="profile-fields">
+            <div class="field">
+              <label>Peso: 99kg</label>
+              <div class="profile-field-info">
+                <button class="change-btn">Change</button>
+                <input type="text" class="input-field" />
+              </div>
+            </div>
+            <div class="field">
+              <label>Altura: 150cm</label>
+              <div class="profile-field-info">
+                <button class="change-btn">Change</button>
+                <input type="text" class="input-field" />
+              </div>
+            </div>
+            <div class="field">
+              <label>Edad: 11 </label>
+              <div class="profile-field-info">
+                <button class="change-btn">Change</button>
+                <input type="text" class="input-field" />
+              </div>
+            </div>
+            <div class="field">
+              <label>Objetivo:</label>
+              <button class="change-btn">Change</button>
+              <select class="input-field-2">
+                <option value="">Selecciona un objetivo</option>
+                <option value="perder">Perder peso</option>
+                <option value="mantener">Mantener peso</option>
+                <option value="ganar">Ganar masa</option>
+              </select>
+            </div>
+          </div>
 
-        <div class="username">
-          <strong>[Username]</strong>
-        </div>
-
+          <!-- aca se separan -->
+          <div class="profile-user-info">
+            <div class="user-picture">
+              <img src="/assets/img/lechuga-italiana.png" alt="pfp" />
+            </div>
+            <div class="username">
+              <strong>[Username]</strong>
+            </div>
+          </div>
+        </section>
         <button class="logout-btn">Cerrar sesión.</button>
-      </div>
+      </main>
     </div>
   </body>
 </html>
