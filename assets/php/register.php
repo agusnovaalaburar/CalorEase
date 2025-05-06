@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     
     if ($contrasena === $contrasena2) {
-        $sql = "INSERT INTO usuarios (email, usuario, contraseña)
+        $sql = "INSERT INTO usuario (email, usuario, contraseña)
                 VALUES ('$email', '$usuario', '$contrasena');";
         
         if ($conn->query($sql) === TRUE) {

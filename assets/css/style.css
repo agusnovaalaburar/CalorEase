@@ -952,6 +952,7 @@ body {
   align-items: center;
   height: 100vh;
   width: 80%;
+  font-size: 2.5rem;
 }
 
 .profile {
@@ -994,11 +995,11 @@ body {
 
 .field label {
   flex: 0.4;
+  width: 40rem;
 }
 
 .profile-field-info {
-  flex: 0.6;
-  display: flex;
+  flex: 0.5;
   justify-content: space-evenly;
 }
 
@@ -1006,15 +1007,15 @@ body {
   background-color: #3f3f46;
   color: white;
   border: none;
-  padding: 4px 8px;
+  padding: 1rem 8px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 0.8rem;
 }
 
 .input-field {
-  width: 40%;
-  padding: 4px 0px;
+  width: 35%;
+  padding: 0.7rem 0.2rem;
   border: none;
   border-radius: 2rem;
 }
@@ -1029,9 +1030,10 @@ body {
   background-color: var(--color-primario);
   color: white;
   border: none;
+  margin-left: 70%;
   padding: 8px 16px;
-  border-radius: 6px;
-  width: 100%;
+  border-radius: 18px;
+  width: 56%;
   cursor: pointer;
   font-size: 1.9rem;
 }
@@ -1040,9 +1042,21 @@ body {
   padding: 4px 1.3rem;
   border: none;
   border-radius: 2rem;
+  height: 3rem;
 }
 
 .navbar {
   color: #2b2b2b;
   height: 4rem;
+}
+.change-btn-2 {
+  margin-left: 13rem;
+  background-color: #3f3f46;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  height: 2.8rem;
 }
