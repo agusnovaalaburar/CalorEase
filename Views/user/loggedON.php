@@ -30,5 +30,6 @@ $id_usuario = $_SESSION['id_usuario'];
     <p>Tu objetivo calórico: <?php echo $_SESSION['obj_kcal']; ?> kcal</p>
     <p>Tu objetivo físico: <?php echo $_SESSION['obj_fisico']; ?></p>
     <a href="cerrarsesion.php">Cerrar sesión</a>
+    <a href="data-register.html">Ingresar resto de datos</a>
 </body>
 </html>
