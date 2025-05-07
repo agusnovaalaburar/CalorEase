@@ -1,7 +1,7 @@
 <?php
 session_start();
-include 'obtenerUsuario.php';
-include 'obtenerDatos.php';
+// include '../../assets/php/logged-resources/obtenerUsuario.php';
+include '../../assets/php/logged-resources/obtenerDatos.php';
 
 // Verificar si el usuario ha iniciado sesión
 if (!isset($_SESSION['id_usuario'])) {
@@ -22,8 +22,8 @@ $id_usuario = $_SESSION['id_usuario'];
 <body>
     <h1>Bienvenido</h1>
     <p>Has iniciado sesión exitosamente.</p>
-    <h1>Hola, <?php echo htmlspecialchars($nombre_usuario); ?>!</h1>
-    <p>Tu ID de usuario es: <?php echo htmlspecialchars($id_usuario); ?></p>
+    <!-- <h1>Hola, <?php echo htmlspecialchars($nombre_usuario); ?>!</h1>
+    <p>Tu ID de usuario es: <?php echo htmlspecialchars($id_usuario); ?></p> -->
     <p>Tu peso es: <?php echo $_SESSION['peso']; ?> kg</p>
     <p>Tu altura es: <?php echo $_SESSION['altura']; ?> cm</p>
     <p>Tu IMC es: <?php echo $_SESSION['imc']; ?></p>

@@ -23,9 +23,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 VALUES ('$email', '$contrasena');";
         
         if ($conn->query($sql) === TRUE) {
-            echo "cargado";
+            echo "Usuario cargado correctamente *aca poner pantalla bonita*";
             echo"<br>";
-            echo '<a href="../../login.html">Continuar</a>';
+            echo '<h2> <a href="../../Views/user/login.html">Logearse</a> </h2>';
+            echo"<br>";
+            echo '<h2> <a href="../../index.html">Ir a inicio</a> </h2>';
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
