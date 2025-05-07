@@ -19,11 +19,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     
     if ($contrasena === $contrasena2) {
-        $sql = "INSERT INTO usuario (email, usuario, contraseña)
-                VALUES ('$email', '$usuario', '$contrasena');";
+        $sql = "INSERT INTO usuario (email, contraseña)
+                VALUES ('$email', '$contrasena');";
         
         if ($conn->query($sql) === TRUE) {
             echo "cargado";
+            echo"<br>";
+            echo '<a href="../../login.html">Continuar</a>';
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
