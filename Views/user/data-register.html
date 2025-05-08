@@ -41,51 +41,51 @@
                         <div class="title">Información básica</div>
                         <div class="field">
                             <div class="label">Nombre</div>
-                            <input type="text" required />
+                            <input type="text" name="nombre" required />
                         </div>
                         <div class="field">
                             <div class="label">Apellido</div>
-                            <input type="text" required />
+                            <input type="text" name="apellido" required />
                         </div>
                         <div class="field">
                             <button class="firstNext next">Siguiente</button>
                         </div>
                     </div>
-
+            
                     <!-- Paso 2 -->
                     <div class="page">
                         <div class="title">Datos físicos</div>
                         <div class="field">
                             <div class="label">Peso (kg)</div>
-                            <input type="number" required />
+                            <input type="number" name="peso" required />
                         </div>
                         <div class="field">
-                            <div class="label">Altura (cm)</div>
-                            <input type="number" required />
+                            <div class="label">Altura (m)</div>
+                            <input type="number" step="0.01" name="altura" required />
                         </div>
                         <div class="field">
                             <div class="label">Objetivo de kcal diarias</div>
-                            <input type="number" required />
+                            <input type="number" name="objKCAL" required />
                         </div>
                         <div class="field btns">
                             <button class="prev-1 prev">Atrás</button>
                             <button class="next-1 next">Siguiente</button>
                         </div>
                     </div>
-
+            
                     <!-- Paso 3 -->
                     <div class="page">
                         <div class="title">Objetivo físico</div>
                         <div class="field">
-                            <input type="radio" name="objetivo" id="bajar" required />
+                            <input type="radio" name="objetivo_fisico" id="bajar" value="Bajar peso" required />
                             <label for="bajar">Bajar peso</label>
                         </div>
                         <div class="field">
-                            <input type="radio" name="objetivo" id="subir" />
+                            <input type="radio" name="objetivo_fisico" id="subir" value="Subir peso" />
                             <label for="subir">Subir peso</label>
                         </div>
                         <div class="field">
-                            <input type="radio" name="objetivo" id="mantener" />
+                            <input type="radio" name="objetivo_fisico" id="mantener" value="Mantener peso" />
                             <label for="mantener">Mantener peso</label>
                         </div>
                         <div class="field btns">
@@ -93,7 +93,7 @@
                             <button class="next-2 next">Siguiente</button>
                         </div>
                     </div>
-
+            
                     <!-- Paso 4 -->
                     <div class="page">
                         <div class="title">Confirmar</div>
@@ -106,6 +106,7 @@
                         </div>
                     </div>
                 </form>
+            </div>            
             </div>
         </div>
         <script src="../../assets/javascript/data-register-script.js"></script>

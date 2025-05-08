@@ -1,7 +1,7 @@
 <?php
-session_start(); // Importante: iniciar la sesión
+if (!isset($_SESSION)) session_start();
 
-include '../conexion.php';
+// include '../conexion.php';
 
 // Verificar que el usuario esté logueado
 if (!isset($_SESSION['id_usuario'])) {
@@ -49,7 +49,7 @@ if (!isset($_POST['nombre']) || empty(trim($_POST['nombre']))) {
 
     error_log("Datos recibidos: $nombre, $apellido, $altura, $peso, $imc, $objKCAL, $objetivo, ID: $id_usuario");
 
-    $stmt = $conexion->prepare("UPDATE usuario SET Nombre = ?, Apellido = ?, Altura = ?, Peso = ?, IMC = ?, Obj_KCAL = ?, Obj_Fisico = ? WHERE id = ?");
+    $stmt = $conexion->prepare("UPDATE usuario SET Nombre = ?, Apellido = ?, Altura = ?, Peso = ?, IMC = ?, Obj_KCAL = ?, Obj_Fisico = ? WHERE ID_usuario = ?");
     $stmt->bind_param("ssdddssi", $nombre, $apellido, $altura, $peso, $imc, $objKCAL, $objetivo, $id_usuario);
 
     if ($stmt->execute()) {
